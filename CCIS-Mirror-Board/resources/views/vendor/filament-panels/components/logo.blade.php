@@ -1,0 +1,1 @@
+<img src="{{ asset('images/CSU-CCIS-White-scaled2.png') }}" alt="Logo" class="h-11s w-11 ">

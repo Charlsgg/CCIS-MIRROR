@@ -22,17 +22,18 @@ use App\Filament\Resources\AdminResource\Pages\Auth\CustomLogin;
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
-    {
-        return $panel
+    {   
+        return $panel   
+
             ->default()
             ->id('admin')
-            ->brandName('CSU CCIS')
-            ->brandLogo(asset('images/logo.svg'))
+            ->brandLogo(asset('CCIS-Mirror-Board/resources/images/logo-modified.png'))
             ->path('admin')
             ->login(CustomLogin::class)
             ->registration(Register::class)
             ->passwordReset()
             ->profile()
+            
             ->colors([
                 'primary' => Color::Amber,
             ])
