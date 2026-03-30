@@ -1,12 +1,10 @@
 <p align="center">
-  <a href="" target="_blank">
+  <a href="https://laravel.com" target="_blank">
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
   </a>
 </p>
 
-<p align="center">
-  <h1 align="center">CCIS-MIRROR</h1>
-</p>
+<h1 align="center">CCIS-MIRROR</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-12.0-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 12">
@@ -17,15 +15,16 @@
 
 ## About CCIS-MIRROR
 
-**CCIS-MIRROR** is a modern, full-stack web application built to be robust, responsive, and developer-friendly. It leverages the expressive and elegant syntax of the **Laravel** framework for the backend API and routing, paired with a reactive **Vue 3** frontend. 
+**CCIS-MIRROR** is a modern, full-stack web application built to be robust, responsive, and developer-friendly. It leverages the expressive and elegant syntax of the **Laravel 12** framework for the backend API and routing, paired with a reactive **Vue 3** frontend. 
 
-The application utilizes **Vite** for lightning-fast asset bundling and is styled with the highly customizable **Tailwind CSS**, supplemented by **DaisyUI** and **Flowbite** components.
+The application utilizes **Vite** for lightning-fast asset bundling and is styled with the highly customizable **Tailwind CSS v4**, supplemented by **DaisyUI** and **Flowbite** components.
 
-### Core Technologies:
-- **Backend:** Laravel 12, PHP 8.2, SQLite
-- **Frontend:** Vue 3 (Composition API), Vite, TypeScript
-- **Styling:** Tailwind CSS v4, DaisyUI, Flowbite
-- **Features:** Material Symbols & Lucide Icons, VueQuill (Rich Text Editor), OpenMeteo API integration.
+### Core Technologies & Packages
+- **Backend:** Laravel 12.0, PHP 8.2, SQLite
+- **Frontend:** Vue 3, Vite, TypeScript
+- **Styling:** Tailwind CSS, DaisyUI, Flowbite
+- **Icons:** Material Symbols (`@material-symbols/font-400`), Lucide Icons (`lucide-vue-next`)
+- **Utilities:** VueQuill (Rich Text Editor), OpenMeteo API integration
 
 ---
 
@@ -33,8 +32,9 @@ The application utilizes **Vite** for lightning-fast asset bundling and is style
 
 Ensure your local development environment meets the following requirements before setting up the project:
 
-- **PHP 8.2+** (via XAMPP or native installation; ensure it's added to your system's ENV path)
-- **Composer** (Ensure the `C:\ProgramData\ComposerSetup\bin` path is configured)
+- **XAMPP** (Must include **PHP 8.2**)
+- **Composer** (Local installer setup)
+  - *Requirement:* Ensure your Composer bin path (e.g., `C:\ProgramData\ComposerSetup\bin`) is added to your system's Environment Variables.
 - **Node.js & NPM** (Latest LTS recommended)
 
 ---
@@ -43,7 +43,9 @@ Ensure your local development environment meets the following requirements befor
 
 Follow these steps to get your local environment up and running:
 
-**1. Clone the repository and navigate into it:**
+### 1. Install Dependencies
+Open your terminal in the root directory of the project and install the required PHP and Node dependencies:
+
 ```bash
-git clone <your-repo-url>
-cd CCIS-MIRROR
+composer install
+npm install
